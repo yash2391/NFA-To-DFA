@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documentation</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link href="NFAtoDFA.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <!-- ///////////////////////  CHNAGE ////////////////// -->
+    <header>
+      <div class="header-logo">Theory of Computation Project</div>
+      <div class="header-list">
+        <!-- <ul>
+          <li>About</li>
+          <li>Lessons</li>
+          <li>Contact us</li>
+        </ul> -->
+    </div>
+  </header>
+  
+    <!-- ///////////////////////  CHNAGE ////////////////// -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">NFA to DFA Converter</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="document.html">Documentation</a>   <!-- changes-->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <br/>
+      <!-- <h1>Theory of Computation Project</h1> -->
+      <h2 style = "margin-top: 10px;">Theory of Automata</h2>
+      <p class="instructions" style="margin-top: 7px; margin-bottom: 5px;">
+        Theory of automata is a theoretical branch of computer science and mathematical.
+         It is the study of abstract machines and the computation problems that can be solved using these machines. 
+         The abstract machine is called the automata. 
+         An automaton with a finite number of states is called a Finite automaton. 
+         In this project we will soley focus on NFA(Non-Deterministic Finite Automata) and DFA (Deterministic Finite Automata).
+      </p>
+
+      <br/>
+
+      <h5>Deterministic Finite Automata</h5>
+      <p class="instructions" style="margin-top: 7px;">
+        DFA refers to Deterministic finite automata. The finite automata are called deterministic finite automata if the machine is read an input string one symbol at a time.
+      </p>
+
+      <br/>
+
+      <h5>Non-Deterministic Finite Automata</h5>
+      <p class="instructions" style="margin-top: 7px;">
+        NFA stands for non-deterministic finite automata. The finite automata are called NFA when there exist many paths for specific input from the current state to the next state.
+      </p>
+
+      <br/>
+
+      <h3>Objective</h3>
+      <p class="instructions" style="margin-top: 7px;">
+        The objective of this project is to develop a visualized procedure that converts an NFA into its equivalent DFA.
+         The conversion process will never fail because if a language can be recognized by an NFA, there will always be an equivalent DFA. Because our procedure should be able to handle a NFA containing λ-productions (i.e. null-productions or ε- productions), the final DFA should have the ability to contain multiple states within a single state.
+         In addition, a trap state will also be included.
+      </p>
+      
+      <div class="main-part">
+
+        <h3 style="text-align: left; margin-top: 20px;">How to take Input?</h3>
+        <!--
+      <p class="instructions" style="margin-top: 7px; text-align: justify;">
+        The objective of this project is to develop a visualized procedure that converts an NFA into its equivalent DFA.
+         The conversion process will never fail because if a language can be recognized by an NFA, there will always be an equivalent DFA. Because our procedure should be able to handle a NFA containing λ-productions (i.e. null-productions or ε- productions), the final DFA should have the ability to contain multiple states within a single state.
+         In addition, a trap state will also be included.
+      </p>
+    -->
+       <p class="instructions" style="margin-top: 7px; text-align: left;">
+        Enter the non-deterministic automata (NFA) transitions here, then define
+        the final states and initial state.
+      </p>
+      <ul class="instructions-list" style="text-align: left;">
+        <li>
+          The left-hand current state of each transition must be filled in.
+        </li>
+        <li>
+          [ &lambda; ] - An empty text field corresponds to lambda (or epsilon).
+        </li>
+        <li>
+          The finite set of states ( <i>Q</i> ) and the alphabet ( &Sigma; )
+          will be generated automatically based on the transitions entered.
+        </li>
+        <li>Inputs are case-sensitive and whitespace is not ignored.</li>
+        <li>All entries should be delimited by a comma, if permitted.</li>
+      </ul>
+
+        <hr style="border-top: 2px solid rgba(0,0,0,.1);">
+        <!-- Footer --> 
+        <footer class="footer mt-auto py-3" style="margin-top: 80px;">
+          <div class="container">
+            <!-- Change -->
+            <ul class="footer-nav">
+              <li class="footer-nav-item-subto footer-list" style="font-weight: 570;">Submitted To :</li>
+              <li class="footer-nav-item-subto footer-list">Ms. Raveena Yadav</li>
+              <li class="footer-nav-item-subby footer-list" style="font-weight: 570;">Submitted By :</li>
+              <li class="footer-nav-item-subby footer-list">Tripti Chaudhary (2K19/CO/411)</li>
+              <li class="footer-nav-item-subby footer-list">&</li>
+              <li class="footer-nav-item-subby footer-list">Yash Singh (2K19/CO/442)</li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+
+    <!-- /////////////////////////////////////////////////CHANGE /////////////////////////////////////////////////// -->
+    <!-- <footer>
+      <div class="container">
+        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+        <p>Learn to code, learn to be creative.</p>
+      </div>
+    </footer> -->
+  <!-- /////////////////////////////////////////////////CHANGE /////////////////////////////////////////////////// -->
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/17ac6b8a5c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script
+      src="https://unpkg.com/viz.js@1.8.1/viz.js"
+      type="javascript/worker"
+    ></script>
+    <script src="https://unpkg.com/d3-graphviz@2.6.1/build/d3-graphviz.js"></script>
+
+    <!-- NFAtoDFA engine -->
+    <script src="NFAtoDFA-ENGINE.js"></script>
+
+    <!-- NFAtoDFA DOM -->
+    <script src="NFAtoDFA-DOM.js"></script>
+  </body>
+</html>

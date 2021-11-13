@@ -49,8 +49,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="document.html">Documentation</a>   <!-- changes-->
         </div>
       </div>
     </nav>
@@ -58,12 +58,13 @@
     <div class="container">
       <br />
       <!-- <h1>Theory of Computation Project</h1> -->
-      <h2>Input the NFA</h2>
+      <h2 style="text-align: center; margin-bottom: 20px;">Input the NFA</h2>
+      <!--
       <p class="instructions">
         Enter the non-deterministic automata (NFA) transitions here, then define
         the final states and initial state.
       </p>
-      <ol class="instructions-list">
+      <ul class="instructions-list">
         <li>
           The left-hand current state of each transition must be filled in.
         </li>
@@ -76,7 +77,8 @@
         </li>
         <li>Inputs are case-sensitive and whitespace is not ignored.</li>
         <li>All entries should be delimited by a comma, if permitted.</li>
-      </ol>
+      </ul>
+    -->
       <div class="main-part">
         <!-- <button
           type="button"
@@ -96,7 +98,7 @@
         </button> -->
         <form class="form-horizontal align-center" id="nfa" role="form">
           <form class="form-horizontal">
-            <div class="form-group form-inline">
+            <div class="form-group form-inline" style="padding: 10px 10px 10px 120px;">
 
               <label for="initialStateInput" class ="statefinal">Initial State:&nbsp;&nbsp;</label>
               <input type="text" class="form-control" id="initialStateInput" />
@@ -110,7 +112,7 @@
               <input type="text" class="form-control" id="finalStatesInput" />
             </div> -->
           </form>
-          <div class="form-inline" id="nfa-transitions">
+          <div class="form-inline" id="nfa-transitions" style="padding: 10px 30px 10px 120px;">
             <div class="production-row">
               &delta;(&nbsp;<input
                 type="text"
@@ -190,12 +192,26 @@
       <span id="current-dfa-minimized-status"></span>
       <div id="current-dfa-minimized"></div>
 
-      <footer class="footer mt-auto py-3">
+      <hr style="border-top: 2px solid rgba(0,0,0,.1);">
+      <!-- Footer --> 
+      <footer class="footer mt-auto py-3" style="margin-top: 100px;">
         <div class="container">
+          <!-- Change -->
+          <ul class="footer-nav">
+            <li class="footer-nav-item-subto footer-list" style="font-weight: 570;">Submitted To :</li>
+            <li class="footer-nav-item-subto footer-list">Ms. Raveena Yadav</li>
+            <li class="footer-nav-item-subby footer-list" style="font-weight: 570;">Submitted By :</li>
+            <li class="footer-nav-item-subby footer-list">Tripti Chaudhary (2K19/CO/411)</li>
+            <li class="footer-nav-item-subby footer-list">&</li>
+            <li class="footer-nav-item-subby footer-list">Yash Singh (2K19/CO/442)</li>
+          </ul>
+
+          <!--
           <span class="text-muted"
             >Submitted To</i><br></span>
             <a>Ms. Raveena Yadav</a>
           </span><br></span><br></span>
+
         </div>
         <div class="container">
           <span class="text-muted"
@@ -203,8 +219,10 @@
             <a>Tripti Chaudhary (2K19/CO/411)</a><br></span>
             <a>Yash Singh (2K19/CO/442)</a>
           </span>
+        -->
         </div>
       </footer>
+
     </div>
 
     <!-- /////////////////////////////////////////////////CHANGE /////////////////////////////////////////////////// -->

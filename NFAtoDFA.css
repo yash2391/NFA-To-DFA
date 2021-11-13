@@ -8,12 +8,17 @@ form, input, div {
 
 body {
   font-family: "Avenir Next";
+  text-align: justify;
 }
 
 li {
-  list-style: none;
+  list-style: circle;
 }
 
+.footer-list{
+  list-style-type: none;
+  display: inline;
+}
 /* Write your code below */
 header{
   background-color:#26d0c9;
@@ -28,6 +33,7 @@ header{
   /* font-size:35px;*/
   padding: 20px 20px 10px 350px; 
 }
+
 /* .header-list li{
   float:left;
   padding: 33px 20px;
@@ -116,7 +122,7 @@ span.remove-button {
 span.remove-button:hover {
   background: #555555;
   border-radius: 10px;
-  color: #aaaaaa;
+  color: #030303;
   cursor: pointer;
 }
 
@@ -140,4 +146,19 @@ div.new-production {
 
 .footer {
   text-align: center;
+}
+
+.footer-nav{
+  color: #191A19;
+  text-align: right;
+}
+
+.footer-nav-item-subto{
+  float:left;
+  margin-right: 15px;
+}
+
+.footer-nav-item-subby{
+  /*float:right; */
+  margin-left: 10px;
 }
