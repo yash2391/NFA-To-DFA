@@ -1,25 +1,7 @@
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
-  margin: 0;
+#body{
   padding: 0;
+  margin: 0;
 }
-
-body {
-  font-family: "Avenir Next";
-  text-align: justify;
-}
-
-li {
-  list-style: circle;
-}
-
-.footer-list{
-  list-style-type: none;
-  display: inline;
-}
-/* Write your code below */
 header{
   background-color:#26d0c9;
   color:white;
@@ -27,48 +9,23 @@ header{
   font-style:#fff;
 }
 .header-logo{
+  height: 250px;
   font-weight: 700;
   font-size:50px;
-  float:center;
-  /* font-size:35px;*/
-  padding: 20px 20px 10px 350px; 
+  padding-top: 10px;
+  text-align: center;
 }
-
-/* .header-list li{
-  float:left;
-  padding: 33px 20px;
-} */
-
-/* footer img {
-  width: 125px;
-}
-
-footer p {
-  
-  color :#b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  background-color:#26d0c9;
-  padding-top: 30px;
-  padding-bottom: 20px;
-} */
-/* ////////////////////////////////// Change //////////////////////////////////////// */
 .instructions {
   margin-bottom: 0px;
 }
 
-.instructions-list {
+ul.instructions-list {
+  padding-top: 5px;
+  padding-bottom: 5px;
   list-style-type: circle;
-  list-style: circle;
+  background-color: white;
   padding-left: 30px;
 }
-/* change */
-.statefinal{
-  margin: 5px 5px 5px 100px;
-}
-
 .btn {
   margin-right: 5px;
 }
@@ -110,11 +67,6 @@ div.production-row {
   font-size: larger;
 }
 
-.main-part {
-  text-align: center;
-  align-items: center;
-}
-
 span.remove-button {
   margin-left: 5px;
 }
@@ -122,7 +74,7 @@ span.remove-button {
 span.remove-button:hover {
   background: #555555;
   border-radius: 10px;
-  color: #030303;
+  color: #AAAAAA;
   cursor: pointer;
 }
 
@@ -131,21 +83,330 @@ div.new-production {
   min-width: 480px;
 }
 
+/*///////////////////////// Enter more state /////////////*/
+#new-transition{
+  margin:auto;
+  width: 100%;
+  border: 3px solid rgb(16, 165, 165);
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  align:center;
+}
+/* ////////////////////////////////////////////////// */
+
+/*////////////// TO Show NFA /////////////////*/
 #nfa {
   margin-top: 10px;
   padding: 10px 0px;
 }
-
+#toshowNFA{
+  /* margin:auto; */
+  display:block;
+}
+#tohideNFA{
+  /* margin:auto; */
+  display:none;
+}
 #current-nfa {
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  display:none;
+}
+.TOSHOWNFA{
+  /* margin:auto; */
+}
+/* Button */
+#toshowNFA {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
+#toshowNFA span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#toshowNFA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#toshowNFA:hover span {
+  padding-right: 25px;
+}
+
+#toshowNFA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Button */
+#tohideNFA {
+  display: none;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#tohideNFA span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#tohideNFA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#tohideNFA:hover span {
+  padding-right: 25px;
+}
+
+#tohideNFA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*////////////// TO Show DFA /////////////////*/
+#toshowDFA{
+  display: block;
+}
+#tohideDFA{
+  /* margin:auto; */
+  display:none;
+}
+#current-dfa {
+  /* margin:auto; */
+  display:none;
+  /* margin-left: 15px; */
+}
+.TOSHOWDFA{
+  /* margin:auto; */
+}
+/* Button */
+#toshowDFA {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#toshowDFA span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#toshowDFA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#toshowDFA:hover span {
+  padding-right: 25px;
+}
+
+#toshowDFA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Button */
+#tohideDFA {
+  display:none;
+  /* display: inline-block; */
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#tohideDFA span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#tohideDFA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#tohideDFA:hover span {
+  padding-right: 25px;
+}
+
+#tohideDFA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*////////////// TO Show Minimized DFA /////////////////*/
+#toshowMinimizedDFA{
+  display: block;
+}
+#tohideMinimizedDFA{
+  /* margin:auto; */
+  display:none;
+}
+#current-dfa-minimized {
+  margin:auto; 
+  display:none;
+  margin-left: 15px;
+}
+.TOSHOWMINIMIZEDDFA{
+  /* margin:auto;*/
+}
+/* Button */
+#toshowMinimizedDFA {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #fffdfd;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#toshowMinimizedDFA span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#toshowMinimizedDFA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#toshowMinimizedDFA:hover span {
+  padding-right: 25px;
+}
+
+#toshowMinimizedDFA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Button */
+#tohideMinimizedDFA {
+  display:none;
+  /* display: inline-block; */
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#tohideMinimizedDFA span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#tohideMinimizedDFA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#tohideMinimizedDFA:hover span {
+  padding-right: 25px;
+}
+
+#tohideMinimizedDFA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* ////////////////////////////////////////////////////////// */
 .production-row input {
   max-width: 100px;
 }
 
+/* div.footer p {
+  margin: 5px;
+} */
+
 .footer {
   text-align: center;
+  padding-bottom: 0px;
+}
+.footer-list{
+  list-style-type: none;
+  display: inline;
 }
 
 .footer-nav{
@@ -161,4 +422,26 @@ div.new-production {
 .footer-nav-item-subby{
   /*float:right; */
   margin-left: 10px;
+}
+.container1{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom:0px ;
+}
+.container1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.container1 li{
+  font-size: 15px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
 }
