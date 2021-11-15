@@ -3,12 +3,14 @@
   margin: 0;
 }
 header{
+  font-family: "Lucida Grande";
   background-color:#26d0c9;
   color:white;
   height:100px;
   font-style:#fff;
 }
 .header-logo{
+  font-family: "Lucida Grande";
   height: 250px;
   font-weight: 700;
   font-size:50px;
@@ -83,6 +85,14 @@ div.new-production {
   min-width: 480px;
 }
 
+#resetBtn{
+  align-self: center;
+  margin-left: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: relative;
+  align:center;
+}
 /*///////////////////////// Enter more state /////////////*/
 #new-transition{
   margin:auto;

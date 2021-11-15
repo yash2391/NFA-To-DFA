@@ -46,8 +46,8 @@
 <body>
   <header class = "header-logo">
     <img src="wave-square-solid.svg" width="75px" height="75px" style="color: white;">
-    <div>Theory of Computation Project</div>
-    <h1 id = "header1">NFA to DFA Converter</h1>
+    <div style="font-family:Copperplate, Papyrus, fantasy; font-size: 60px; ">Theory of Computation Project</div>
+    <h1 id = "header1" style="font-family:Copperplate, Papyrus, fantasy; font-size: 40px ; margin-top: 5px;">NFA to DFA Converter</h1>
   </header>
   <div id = "div1">
     <style>
@@ -74,7 +74,7 @@
       li a:hover:not(.active) {
         background-color: #111;
       }
-      
+
       .active {
         background-color: #04AA6D;
       }
@@ -84,6 +84,7 @@
         <ul>
           <li><a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a></li>
           <li><a class="nav-link active" href="document.html">Documentation</a>   <!-- changes--></li>
+          </style>
         </ul>
       </div>
     </div>
@@ -98,20 +99,21 @@
     <!-- ///////////////////// MAking chaNGES ////////////////////////////// -->
 <div class="container">
   <br>
-  <h2 style="text-align: center; margin-bottom: 20px;">Input the NFA</h2>
+  <h2 style="text-align: center; margin-bottom: 20px; font-family: Lucida Grande;">Input the NFA</h2>
   <div class="main-part">
     <!-- FORM TAKING INPUT -->
     <form class="form-horizontal" id="nfa" role="form">
         <form class="form-horizontal">
-            <div class="form-group form-inline" style="padding: 10px 10px 10px 120px;">
+            <div class="form-group form-inline" style="align: centre; padding: 10px 200px 5px 450px;">
                 <label for="initialStateInput">Initial State:&nbsp;&nbsp;</label>
                 <input type="text" class="form-control" id="initialStateInput">
-
-                <label for="finalStatesInput">Final States:&nbsp;</label>
-                <input type="text" class="form-control" id="finalStatesInput">
             </div>
+            <div class="form-group form-inline" style="align: centre; padding: 10px 200px 5px 450px;">
+              <label for="finalStatesInput" >Final States:&nbsp;</label>
+              <input type="text" class="form-control" id="finalStatesInput">
+          </div>
         </form>
-        <div class="form-inline" id="nfa-transitions" style="padding: 10px 30px 10px 150px;">
+        <div class="form-inline" id="nfa-transitions" style="padding: 10px 30px 10px 375px;">
             <div class="production-row">
                 &delta;(&nbsp;<input type="text" class="form-control current-state-input">&nbsp;,&nbsp;<input
                     type="text"
@@ -125,14 +127,14 @@
     </form>
     <div class="clearfix"></div>
   </br>
-    <div class="col-xs-6 new-production">
+    <div class="col-xs-6 new-production" style="padding: 10px 30px 10px 325px; width: 75%;">
         <button id="new-transition" type="button" class="btn btn-default btn-lg btn-block"
                 title="Create a new transition">
             <span class="glyphicon glyphicon-plus"></span> &nbsp;Click here or press &quot;Enter&quot; for a new
             transition
         </button>
-        <br></br>
-        <button type="button" class="btn btn-danger" id="resetBtn" title="Reset the current NFA">Reset</button>
+        <br>
+        <button type="button" class="btn btn-danger" id="resetBtn" title="Reset the current NFA" >Reset</button>
         <button type="button" class="btn btn-info" id="exampleBtn" title="Fill in an example NFA">Example</button>
     </div>
   </div>
